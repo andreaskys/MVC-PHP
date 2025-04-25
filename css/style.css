@@ -198,6 +198,17 @@ body {
     color: dodgerblue;
 }
 
+#carouselExampleFade {
+    height: 900px;
+}
+
+#carouselExampleFade .carousel-inner,
+#carouselExampleFade .carousel-item,
+#carouselExampleFade .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero h1 {

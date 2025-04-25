@@ -6,6 +6,7 @@
     <title>FlowForMen</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -13,21 +14,19 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-black sticky-top">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="img/FlowForMenBlck.jpg" alt="FlowForMen" height="50">
+            <img src="img/FlowForMenBlck.jpg" alt="FlowForMen" height="752">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Empresa</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Minha Conta</a></li>
             </ul>
             <div class="d-flex">
                 <button class="btn btn-outline-light">
-                    <i class="bi bi-cart"></i>
+                    <i class="fa fa-shopping-cart" style="font-size:24px;"></i>
                 </button>
             </div>
         </div>
@@ -36,7 +35,30 @@
 
 <!-- Hero Section -->
 
-<!-- Featured Products -->
+<!-- Carousel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/blue.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/million.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Screenshot%202024-12-16%20195741.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
 <section class="py-5">
     <div class="container">
         <h2 class="text-center mb-5 text-light">Produtos em Destaque</h2>
@@ -73,7 +95,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-black text-light py-5">
+<footer class="bg-black text-light py-5 text-center">
     <div class="container">
         <div class="row g-4 align-items-center">
             <div class="col-md-6">
@@ -84,9 +106,8 @@
                     <div class="col-md-5">
                         <h3>Mais informações</h3>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="text-light text-decoration-none">Politica de Privacidade</a></li>
-                            <li><a href="#" class="text-light text-decoration-none">Termos de Uso</a></li>
-                            <li><a href="#" class="text-light text-decoration-none">Contatos</a></li>
+                            <li><a href="terms.html" class="text-light text-decoration-none">Politica de Privacidade</a></li>
+                            <li><a href="terms.html" class="text-light text-decoration-none">Termos de Uso</a></li>
                         </ul>
                     </div>
                     <div class="col-md-5">
@@ -100,8 +121,8 @@
                 </div>
             </div>
         </div>
-        <hr class="my-4">
-        <p class="text-center mb-0">Copyright - 2025 - FlowForMen</p>
+        <hr class="bg-light">
+        <p class="mb-0">&copy; <span id="current-year"></span> FlowForMen. Todos os direitos reservados.</p>
     </div>
 </footer>
 
